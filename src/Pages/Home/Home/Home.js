@@ -1,4 +1,5 @@
 import React from 'react';
+import Experts from '../Experts/Experts';
 import Serviecs from '../Seviecs/Serviecs';
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
             <Serviecs>
 
             </Serviecs>
+            <Experts></Experts>
         </div>
     );
 };
