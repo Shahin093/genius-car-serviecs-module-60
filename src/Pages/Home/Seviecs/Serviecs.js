@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Service from '../Home/Service/Service';
 import './Serviecs.css'
 const Serviecs = () => {
     const [services, setServices] = useState([]);
+
+
     useEffect(() => {
         fetch('serviecs.json')
             .then(res => res.json())
