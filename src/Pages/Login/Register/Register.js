@@ -36,10 +36,12 @@ const Register = () => {
                 <input type="text" name="name" id="" placeholder='Your Name' required />
                 <input type="email" name="email" id="" placeholder='Email Address' required />
                 <input type="password" name="password" id="" placeholder='Password' required />
-                <input type="submit" value="Register" />
+                <input type="checkbox" name="terms" id="terms" />
+                <label htmlFor="terms">Accept Geninus Terms And Condition</label>
+                <input className='w-50 mx-auto btn btn-primary mt-2' type="submit" value="Register" />
 
             </form>
-            <p>Already have a acount <Link to={'/login'} className='text-danger p-auto text-decoration-none' onClick={navigateLogin}>Please Login</Link></p>
+            <p>Already have a acount <Link to={'/login'} className='text-primary p-auto text-decoration-none' onClick={navigateLogin}>Please Login</Link></p>
             <SocialLogin></SocialLogin>
         </div>
     );
