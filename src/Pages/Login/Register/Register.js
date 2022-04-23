@@ -5,6 +5,7 @@ import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-fireb
 
 import './Register.css'
 import SocialLogin from '../SocialLogin/SocialLogin';
+import Loading from '../../Shared/Loading/Loading';
 const Register = () => {
     const [agree, setAgree] = useState(false);
     const [
@@ -21,6 +22,10 @@ const Register = () => {
     }
     if (user) {
         console.log('user : ', user);
+    }
+
+    if (loading || updating) {
+        <Loading></Loading>
     }
 
     const handleRegister = async event => {
